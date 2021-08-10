@@ -1,2 +1,2 @@
-# Fault_prediction
-this repository is created for fault prediction model.
+# Insurance premium prediction
+this repository is created for insurance premium prediction model.

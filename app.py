@@ -8,31 +8,46 @@ app = Flask(__name__)
 
 # Load the model from the File
 
-premium_prediction = joblib.load('model/premium_pred_model.pkl')
+model_load = joblib.load('./model/premium_pred_model.pkl')
+model_columns = joblib.load('./model/model_columns.pkl')
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
-    return "Insurance Premium Prediction!!!"
+    return render_template('index.html')
 
 
-@app.route('/predict', methods=['GET', 'POST'])
+@app.route("/predict", methods=['POST'])
 def predict():
-    age = int(request.form['age'])
-    sex = request.form['sex']
-    bmi = float(request.form['bmi'])
-    children = int(request.form['children'])
-    smoker = request.form['smoker']
-    region = request.form['region']
+    if request.method == 'POST':
+        age = request.form['age']
+        bmi = request.form['bmi']
+        region = request.form['region']
+        sex = request.form['sex']
+        smoker = request.form['smoker']
+        children = request.form['children']
+        input_val = [age, bmi, region, sex, smoker, children]
+        for i in model_columns:
+            if i not in input_val:
+                input_val[i] = 0
 
-    print(age)
+        final_features = [np.array(input_val)]
 
-    test_inp = np.array([age, sex, bmi, children, smoker, region]).reshape(1, 6)
-    premium_predicted = int(premium_prediction.predict(test_inp)[0])
-    output = "Predicted Insurance Premium: " + str(premium_predicted)
+        output = model_load.predict(final_features).tolist()
+        return render_template('index.html', prediction_text='Insurance Premium is  {}'.format(output))
+    else:
+        return render_template('index.html')
 
-    return output
+
+@app.route("/predict_api", methods=['POST', 'GET'])
+def predict_api():
+    print(" request.method :", request.method)
+    if request.method == 'POST':
+        data = request.get_json()
+        return jsonify(model_load.predict([np.array(list(data.values()))]).tolist())
+    else:
+        return render_template('index.html')
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5000)

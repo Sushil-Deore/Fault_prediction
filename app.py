@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify
 import numpy as np
-import sklearn.externals as extjoblib
 import joblib
 
 # Create Flask object to Run
@@ -9,7 +8,6 @@ app = Flask(__name__)
 # Load the model from the File
 
 model_load = joblib.load('./model/premium_pred_model.pkl')
-model_columns = joblib.load('./model/model_columns.pkl')
 
 
 @app.route('/')
@@ -22,15 +20,20 @@ def predict():
     if request.method == 'POST':
         age = request.form['age']
         bmi = request.form['bmi']
-        region = request.form['region']
+        region_northwest = request.form['region_northwest']
+        region_southeast = request.form['region_southeast']
+        region_southwest = request.form['region_southwest']
         sex = request.form['sex']
         smoker = request.form['smoker']
         children = request.form['children']
-        input_val = [age, bmi, region, sex, smoker, children]
-        for i in model_columns:
-            if i not in input_val:
-                input_val[i] = 0
-
+        input_val = [age,
+                     bmi,
+                     region_northwest,
+                     region_southeast,
+                     region_southwest,
+                     sex,
+                     smoker,
+                     children]
         final_features = [np.array(input_val)]
 
         output = model_load.predict(final_features).tolist()

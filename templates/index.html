@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--suppress XmlInvalidId -->
-<body  align="center" style="background-color:green;">
+<body align="center" style="background-color:green;">
 <head>
     <meta charset="UTF-8">
     <title>Model Deployment</title>
@@ -14,7 +14,6 @@
 
 </head>
 
-<body>
 <div class="login">
     <h1 style="text-align:center">Insurance Premium Prediction </h1>
 
@@ -25,38 +24,38 @@
         <label for="bmi">Please Enter bmi:</label>
         <input type="text" style="text-align:center" name="bmi" placeholder="bmi" required="required" />
         <br>
-        <label for="region">Select region :</label>
-        <select name="region" id="region" >
-            <option value="northeast" selected>northeast</option>
-            <option value="southeast">southeast</option>
-            <option value="northwest">northwest</option>
-            <option value="southwest">southwest</option>
-        </select>
-        <br><br>
+        <label for="children">Please Enter number of children:</label>
+        <input type="text" style="text-align:center" name="children" placeholder="children" required="required" />
+        <br>
         <label for="sex">Select sex :</label>
         <select name="sex" id="sex">
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
         </select>
         <br><br>
-        <label for="smoker">smoking? :</label>
+        <label for="smoker">smoking?: </label>
         <select name="smoker" id="smoker">
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
         </select>
         <br><br>
-        <label for="children">Select number of children :</label>
-        <select name="children" id="children">
-            <option value="0" selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
+        <label for="region_northwest">region_northwest :</label>
+        <select name="region_northwest" id="region_northwest">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
         </select>
         <br><br>
-
+        <label for="region_southeast">region_southeast :</label>
+        <select name="region_southeast" id="region_southeast">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+        <br><br>
+        <label for="region_southwest">region_southwest :</label>
+        <select name="region_southwest" id="region_southwest">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
         <br>
         <button align="center" type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
@@ -68,4 +67,3 @@
 </div>
 
 
-</body>

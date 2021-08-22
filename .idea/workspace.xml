@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3498e470-643f-42c7-b6b8-7466f2feff7f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/insurance_premium_prediction.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Insurance Premium Prediction-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Insurance Premium Prediction-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Insurance Premium Prediction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Insurance Premium Prediction.ipynb" afterDir="false" />
+    <list default="true" id="b73eaeea-5e14-4f53-85fc-663ffbe45221" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Insurance Premium Prediction-checkpoint.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model_columns.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/premium_pred_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/model/premium_pred_model.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,23 +12,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1x2YJBVy6rc5XqNsPFqciBxQnuK" />
+  <component name="ProjectId" id="1x4jJm4X6BHvTEB1TMnCERBcggL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
@@ -72,11 +56,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3498e470-643f-42c7-b6b8-7466f2feff7f" name="Default Changelist" comment="" />
-      <created>1629554589117</created>
+      <changelist id="b73eaeea-5e14-4f53-85fc-663ffbe45221" name="Default Changelist" comment="" />
+      <created>1629621190161</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1629554589117</updated>
+      <updated>1629621190161</updated>
     </task>
     <servers />
   </component>

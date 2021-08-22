@@ -42,6 +42,7 @@ def predict():
         return render_template('index.html')
 
 
+"""
 @app.route("/predict_api", methods=['POST', 'GET'])
 def predict_api():
     print(" request.method :", request.method)
@@ -51,6 +52,6 @@ def predict_api():
     else:
         return render_template('index.html')
 
-
+"""
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

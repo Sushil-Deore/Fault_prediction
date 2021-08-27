@@ -37,7 +37,8 @@ def predict():
         final_features = [np.array(input_val)]
 
         output = model_load.predict(final_features).tolist()
-        return render_template('index.html', prediction_text='Insurance Premium is  {}'.format(output))
+        
+        return render_template('index.html', prediction_text=f'Insurance Premium is {output}')
     else:
         return render_template('index.html')
 

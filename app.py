@@ -46,7 +46,7 @@ def predict():
                      children]
         final_features = [np.array(input_val)]
 
-        output = model_load.predict(final_features).tolist()
+        output = round(model_load.predict(final_features).tolist(),2)
 
         # logging operation
         logging.info(f"Insurance Premium is {output}")
@@ -81,7 +81,7 @@ def predict_api():
                      children]
         final_features = [np.array(input_val)]
 
-        output = model_load.predict(final_features).tolist()
+        output = round(model_load.predict(final_features).tolist(), 2)
         return jsonify(output)
 
 

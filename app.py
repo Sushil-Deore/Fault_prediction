@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 # Load the model from the File
 
-model_load = joblib.load('./model/premium_pred_model.pkl')
+model_load = joblib.load('./model/premium_prediction_model.pkl')
 
 logging.info('Pickle file loading completed.')
 
@@ -26,6 +26,7 @@ def home():
 
 @app.route("/predict", methods=['POST'])
 def predict():
+    # For rendering results on HTML GUI
     if request.method == 'POST':
         age = request.form['age']
         bmi = request.form['bmi']
@@ -57,6 +58,7 @@ def predict():
         return render_template('index.html')
 
 
+# App Code for Testing on Postman
 @app.route("/predict_api", methods=['POST', 'GET'])
 def predict_api():
     print(" request.method :", request.method)

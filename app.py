@@ -1,3 +1,4 @@
+import pandas as pd
 from flask import Flask, render_template, request, jsonify
 import numpy as np
 import joblib
@@ -45,15 +46,17 @@ def predict():
                      smoker,
                      children]
         final_features = [np.array(input_val)]
+        df = pd.DataFrame(final_features)
 
-        output = round(model_load.predict(final_features).tolist(),2)
+        output = model_load.predict(df)
+        result = "%.2f" % round(output[0], 2)
 
         # logging operation
-        logging.info(f"Insurance Premium is {output}")
+        logging.info(f"Insurance Premium is {result}")
 
         logging.info('Prediction getting posted to the web page.')
 
-        return render_template('index.html', prediction_text=f'Insurance Premium is $ {output} ')
+        return render_template('index.html', prediction_text=f'Insurance Premium is $ {result} ')
     else:
         return render_template('index.html')
 
@@ -81,7 +84,7 @@ def predict_api():
                      children]
         final_features = [np.array(input_val)]
 
-        output = round(model_load.predict(final_features).tolist(), 2)
+        output = model_load.predict(final_features).tolist()
         return jsonify(output)
 
 

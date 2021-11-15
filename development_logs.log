@@ -1,0 +1,23 @@
+INFO:2021-11-15 11:24:16,472:model checks are done
+INFO:2021-11-15 11:24:17,237:NumExpr defaulting to 4 threads.
+INFO:2021-11-15 11:25:02,619:Data Visualization done
+INFO:2021-11-15 11:25:02,988:Feature engineering done
+INFO:2021-11-15 11:25:05,348:Train Test Split done
+INFO:2021-11-15 11:25:25,479:Linear regression model built successfully
+INFO:2021-11-15 11:25:50,433:Decision Tree model built successfully
+INFO:2021-11-15 11:37:24,707:Gradient boosting model built successfully
+INFO:2021-11-15 11:37:24,759:Model Selection done
+INFO:2021-11-15 11:37:25,099:Pickle File generated successfully
+INFO:2021-11-15 12:00:17,368:model checks are done
+INFO:2021-11-15 12:06:10,854:Outlier treatment done
+INFO:2021-11-15 12:06:41,127:Data Visualization done
+INFO:2021-11-15 12:06:41,489:Feature engineering done
+INFO:2021-11-15 12:06:41,769:Train Test Split done
+INFO:2021-11-15 12:06:43,767:Linear regression model built successfully
+INFO:2021-11-15 12:06:47,478:Ridge regression model built successfully
+INFO:2021-11-15 12:06:49,549:Lasso regression model built successfully
+INFO:2021-11-15 12:08:03,595:Decision Tree model built successfully
+INFO:2021-11-15 12:08:04,747:Random Forest Regressor model built successfully
+INFO:2021-11-15 12:18:24,876:Gradient boosting model built successfully
+INFO:2021-11-15 12:18:24,891:Model Selection done
+INFO:2021-11-15 12:18:25,126:Pickle File generated successfully

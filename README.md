@@ -47,7 +47,7 @@ URL: https://drive.google.com/file/d/1p-dJe6ge_4WpN4LMxBU1yTEIJ7VCcyIX/view?usp=
 URL: https://drive.google.com/file/d/1j21TTP3bh5hZZuWBodOAvTIWGWR39aKn/view?usp=sharing
 
 ## Demo video: 
-URL: 
+URL: https://drive.google.com/file/d/1c8dNntxZRUIMCpzDu7zjVHIl5Fb43UTz/view?usp=sharing
 
 ## Reference:
 - https://scikitlearn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html

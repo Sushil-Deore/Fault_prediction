@@ -44,13 +44,14 @@ Deployed on web using Heroku (PaaS) url: https://insurancepremiumpred.herokuapp.
 ## Demo video: URL: 
 
 ## Reference:
-https://scikitlearn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html
+- https://scikitlearn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html
 
-https://www.google.com/url?sa=D&q=https://towardsdatascience.com/feature-selection-with-pandas-e3690ad8504b&ust=1637241300000000&usg=AOvVaw0pO3x0h1T83PvMf_TFBEI7&hl=en
+- https://www.google.com/url?sa=D&q=https://towardsdatascience.com/feature-selection-with-pandas-e3690ad8504b&ust=1637241300000000&usg=AOvVaw0pO3x0h1T83PvMf_TFBEI7&hl=en
 
-https://towardsdatascience.com/3-techniques-to-avoid-overfitting-of-decision-trees-1e7d3d985a09
+- https://towardsdatascience.com/3-techniques-to-avoid-overfitting-of-decision-trees-1e7d3d985a09
 
-https://xgboost.readthedocs.io/en/latest/tutorials/param_tuning.html
+- https://xgboost.readthedocs.io/en/latest/tutorials/param_tuning.html
 
-https://www.w3schools.com/
+- https://www.w3schools.com/
 
+- https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax

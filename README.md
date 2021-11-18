@@ -31,17 +31,23 @@ Deployed on web using Heroku (PaaS) url: https://insurancepremiumpred.herokuapp.
 
 ![Tools](https://user-images.githubusercontent.com/69260855/142414506-f21e3ea1-5956-418e-903d-9835c32f3708.png)
 
-## High Level Design: URL: https://drive.google.com/file/d/1ZAUo4g3TwfyOeyUFykpqMeX9jBt8ncve/view?usp=sharing
+## High Level Design: 
+URL: https://drive.google.com/file/d/1ZAUo4g3TwfyOeyUFykpqMeX9jBt8ncve/view?usp=sharing
 
-## Low Level Design: URL: https://drive.google.com/file/d/1k71y1neg0DjfPJGub7KRl9NJsltYnYO_/view?usp=sharing
+## Low Level Design: 
+URL: https://drive.google.com/file/d/1k71y1neg0DjfPJGub7KRl9NJsltYnYO_/view?usp=sharing
 
-## Architecture: URL: https://drive.google.com/file/d/1rEfdDFm_MEq0oBVvuj5JGaI-kkdy6zIG/view?usp=sharing
+## Architecture: 
+URL: https://drive.google.com/file/d/1rEfdDFm_MEq0oBVvuj5JGaI-kkdy6zIG/view?usp=sharing
 
-## Detailed Project report: URL: https://drive.google.com/file/d/1p-dJe6ge_4WpN4LMxBU1yTEIJ7VCcyIX/view?usp=sharing
+## Detailed Project report: 
+URL: https://drive.google.com/file/d/1p-dJe6ge_4WpN4LMxBU1yTEIJ7VCcyIX/view?usp=sharing
 
-## Wireframe document: URL: https://drive.google.com/file/d/1j21TTP3bh5hZZuWBodOAvTIWGWR39aKn/view?usp=sharing
+## Wireframe document: 
+URL: https://drive.google.com/file/d/1j21TTP3bh5hZZuWBodOAvTIWGWR39aKn/view?usp=sharing
 
-## Demo video: URL: 
+## Demo video: 
+URL: 
 
 ## Reference:
 - https://scikitlearn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html

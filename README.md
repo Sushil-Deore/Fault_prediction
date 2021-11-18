@@ -1,10 +1,10 @@
-Insurance Premium Prediction:
+# Insurance Premium Prediction:
  
 To give people an estimate of how much they need based on their individual health situation. After that, customers can work with any health insurance carrier and its plans and perks while keeping the projected cost from our study in mind. I am considering variables as age, sex, BMI, number of children, smoking habits and living region to predict the premium. This can assist a person in concentrating on the health side of an insurance policy rather than the ineffective part.
 
-Data source: https://www.kaggle.com/noordeen/insurance-premium-prediction
+**_ Data source _**: https://www.kaggle.com/noordeen/insurance-premium-prediction
 
-Approach: 
+## Approach: 
 1. Loading the dataset using Pandas and performed basic checks like the data type of each column and having any missing values.
 2. Performed Exploratory data analysis:
 - Visualized each predictor or independent feature with the target feature and found that there's a direct proportionality between cement and the target feature while there's an inverse proportionality between water and the target feature.
@@ -21,35 +21,36 @@ At each step in both development and deployment parts, logging operation is perf
 
 So, now we can find the insurance premium quickly by just passing the mentioned details as an input to the web application 😊
 
-Web Deployment
+## Web Deployment
 Deployed on web using Heroku (PaaS) url: https://insurancepremiumpred.herokuapp.com/
 
-Screenshots
+## Screenshots
 ![UI](https://user-images.githubusercontent.com/69260855/142414181-67630ea9-48db-4a73-92f2-624df0984341.png)
 
-Tools and Technologies used
+## Tools and Technologies used
 
 ![Tools](https://user-images.githubusercontent.com/69260855/142414506-f21e3ea1-5956-418e-903d-9835c32f3708.png)
 
-High Level Design: URL:
+## High Level Design: URL:
 
-Low Level Design: URL:
+## Low Level Design: URL:
 
-Architecture: URL:
+## Architecture: URL:
 
-Detailed Project report: URL:
+## Detailed Project report: URL:
 
-Wireframe document: URL:
+## Wireframe document: URL:
 
-Demo video: URL: 
+## Demo video: URL: 
 
-Reference:
+## Reference:
+https://scikitlearn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html
 
+https://www.google.com/url?sa=D&q=https://towardsdatascience.com/feature-selection-with-pandas-e3690ad8504b&ust=1637241300000000&usg=AOvVaw0pO3x0h1T83PvMf_TFBEI7&hl=en
 
-•	https://scikitlearn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html
-•	https://www.google.com/url?sa=D&q=https://towardsdatascience.com/feature-selection-with-pandas-e3690ad8504b&ust=1637241300000000&usg=AOvVaw0pO3x0h1T83PvMf_TFBEI7&hl=en
-•	https://towardsdatascience.com/3-techniques-to-avoid-overfitting-of-decision-trees-1e7d3d985a09
-•	https://xgboost.readthedocs.io/en/latest/tutorials/param_tuning.html
-•	https://www.w3schools.com/
+https://towardsdatascience.com/3-techniques-to-avoid-overfitting-of-decision-trees-1e7d3d985a09
 
+https://xgboost.readthedocs.io/en/latest/tutorials/param_tuning.html
+
+https://www.w3schools.com/
 

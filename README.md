@@ -58,4 +58,4 @@ Deployed on web using Heroku (PaaS) url: https://insurancepremiumpred.herokuapp.
 
 ## Author:
 
-###### Sushil Ramdas Deore (Linkedin: https://www.linkedin.com/in/sushil-deore/)
+- ###### Sushil Ramdas Deore (Linkedin: https://www.linkedin.com/in/sushil-deore/)

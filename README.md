@@ -28,6 +28,7 @@ Screenshots
 ![UI](https://user-images.githubusercontent.com/69260855/142414181-67630ea9-48db-4a73-92f2-624df0984341.png)
 
 Tools and Technologies used
+
 ![Tools](https://user-images.githubusercontent.com/69260855/142414506-f21e3ea1-5956-418e-903d-9835c32f3708.png)
 
 High Level Design: URL:
@@ -44,7 +45,8 @@ Demo video: URL:
 
 Reference:
 
-•	https://scikit learn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html
+
+•	https://scikitlearn.org/stable/modules/generated/sklearn.linear_model.LassoCV.html
 •	https://www.google.com/url?sa=D&q=https://towardsdatascience.com/feature-selection-with-pandas-e3690ad8504b&ust=1637241300000000&usg=AOvVaw0pO3x0h1T83PvMf_TFBEI7&hl=en
 •	https://towardsdatascience.com/3-techniques-to-avoid-overfitting-of-decision-trees-1e7d3d985a09
 •	https://xgboost.readthedocs.io/en/latest/tutorials/param_tuning.html

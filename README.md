@@ -55,3 +55,7 @@ Deployed on web using Heroku (PaaS) url: https://insurancepremiumpred.herokuapp.
 - https://www.w3schools.com/
 
 - https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+
+## Author:
+
+## Sushil Ramdas Deore (Linkedin: https://www.linkedin.com/in/sushil-deore/)

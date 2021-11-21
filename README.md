@@ -41,7 +41,7 @@ URL: https://drive.google.com/file/d/1k71y1neg0DjfPJGub7KRl9NJsltYnYO_/view?usp=
 URL: https://drive.google.com/file/d/1rEfdDFm_MEq0oBVvuj5JGaI-kkdy6zIG/view?usp=sharing
 
 ## Detailed Project report: 
-URL: https://drive.google.com/file/d/1p-dJe6ge_4WpN4LMxBU1yTEIJ7VCcyIX/view?usp=sharing
+URL: https://drive.google.com/file/d/1JfNJtK5MxruYYZ_2jfrY8SBKtQAxqIME/view?usp=sharing
 
 ## Wireframe document: 
 URL: https://drive.google.com/file/d/1j21TTP3bh5hZZuWBodOAvTIWGWR39aKn/view?usp=sharing

@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # Load the model from the File
 
-model_load = joblib.load('./model/premium_prediction_model.pkl')
+model_load = joblib.load('./pickle_files/premium_prediction_model.pkl')
 
 logging.info('Pickle file loading completed.')
 

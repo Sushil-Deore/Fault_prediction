@@ -1,0 +1,1012 @@
+INFO:2021-11-28 10:24:47,275:The entire development process runs in the main.py 
+INFO:2021-11-28 10:24:47,275:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 10:24:47,285:Data loaded successfully. Shape of the data is (1338, 7)
+INFO:2021-11-28 10:24:47,285:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 10:24:47,285:Entered the feature_engineering method of the DataPreprocessor class
+INFO:2021-11-28 10:24:47,294:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-28 10:24:47,295:Train test split successful. The shape of train data set is (936, 8) and the shape of test data set is (402, 8)
+INFO:2021-11-28 10:24:47,296:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-28 10:24:47,296:Entered the feature_scaling method of the DataPreprocessor class
+INFO:2021-11-28 10:24:47,300:Feature scaling of both train and test datasets successful. Exited the feature_scaling method of the DataPreProcessor class
+INFO:2021-11-28 10:24:47,301:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 10:24:47,302:Splitting data into X and y is successful. Shapes of X_train is (936, 7),y_train is (936,), X_test is (402, 7) & the y_test is (402,)
+INFO:2021-11-28 10:24:47,302:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 10:24:47,302:Entered the Backward Elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:24:47,435:Linear regression model built successfully using Backward Elimination approach.
+INFO:2021-11-28 10:24:47,435:Exited the backward_elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:24:47,438:Defining a function to record the relevant features of each model in the 'relevant_features_by_models.csv' file in the 'results' directory
+INFO:2021-11-28 10:24:47,444:Important features of the Linear_Regression_BE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:24:47,450:Created a blank data frame "algo_results" to store the results of each and every model
+INFO:2021-11-28 10:24:47,450:Defining a function "evaluate" to evaluate the performance metrics of a model
+INFO:2021-11-28 10:24:47,451:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,451:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,451:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,452:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:24:47,452:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,453:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,453:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,453:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,454:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,454:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:24:47,454:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,455:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,458:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:24:47,458:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:24:47,461:Entered the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:24:47,525:Linear regression model built successfully using RFE approach. 
+INFO:2021-11-28 10:24:47,525:Exited the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:24:47,531:Important features of the Linear Regression_RFE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:24:47,532:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,533:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,533:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,534:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:24:47,534:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,535:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,535:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,536:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,536:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,536:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:24:47,537:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,537:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,542:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:24:47,542:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:24:47,544:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:24:47,630:Linear regression model built successfully using Elastic_Net_CV approach. 
+INFO:2021-11-28 10:24:47,630:Exited the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:24:47,634:Important features of the Linear Regression_ECV updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:24:47,637:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,638:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,638:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,639:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:24:47,639:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,640:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,640:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,641:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,641:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,642:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:24:47,642:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,643:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,648:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:24:47,649:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:24:47,654:Entered the lassocv method of the Lasso class.
+INFO:2021-11-28 10:24:47,783:Linear regression model built successfully using LassoCV approach. 
+INFO:2021-11-28 10:24:47,783:Exited the lassocv method of the Lasso class.
+INFO:2021-11-28 10:24:47,785:Important features of the Linear Regression_Lasso updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:24:47,786:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,787:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,787:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,788:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:24:47,788:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,788:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,788:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,789:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,789:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:24:47,789:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:24:47,790:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,790:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:24:47,792:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:24:47,793:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:24:47,794:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 10:24:47,796:Splitting data into X and y is successful. Shapes of X_train is (936, 7),y_train is (936,), X_test is (402, 7) & the y_test is (402,)
+INFO:2021-11-28 10:24:47,796:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 10:24:47,796:Building a Decision tree regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:24:47,796:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 10:24:52,977:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 10:24:52,977:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:24:52,984:Important features of the Decision tree regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:25:51,896:The entire development process runs in the main.py 
+INFO:2021-11-28 10:25:51,896:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 10:25:51,903:Data loaded successfully. Shape of the data is (1338, 7)
+INFO:2021-11-28 10:25:51,903:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 10:25:51,903:Entered the feature_engineering method of the DataPreprocessor class
+INFO:2021-11-28 10:25:51,909:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-28 10:25:51,910:Train test split successful. The shape of train data set is (936, 9) and the shape of test data set is (402, 9)
+INFO:2021-11-28 10:25:51,910:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-28 10:25:51,911:Entered the feature_scaling method of the DataPreprocessor class
+INFO:2021-11-28 10:25:51,915:Feature scaling of both train and test datasets successful. Exited the feature_scaling method of the DataPreProcessor class
+INFO:2021-11-28 10:25:51,916:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 10:25:51,917:Splitting data into X and y is successful. Shapes of X_train is (936, 8),y_train is (936,), X_test is (402, 8) & the y_test is (402,)
+INFO:2021-11-28 10:25:51,917:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 10:25:51,917:Entered the Backward Elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:25:51,957:Linear regression model built successfully using Backward Elimination approach.
+INFO:2021-11-28 10:25:51,957:Exited the backward_elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:25:51,957:Defining a function to record the relevant features of each model in the 'relevant_features_by_models.csv' file in the 'results' directory
+INFO:2021-11-28 10:25:51,960:Important features of the Linear_Regression_BE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:25:51,965:Created a blank data frame "algo_results" to store the results of each and every model
+INFO:2021-11-28 10:25:51,965:Defining a function "evaluate" to evaluate the performance metrics of a model
+INFO:2021-11-28 10:25:51,965:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:51,966:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:51,966:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:51,967:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:51,967:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:51,967:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:51,968:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:51,968:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:51,968:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:51,969:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:51,969:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:51,969:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:51,973:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:25:51,973:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:25:51,975:Entered the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:25:52,045:Linear regression model built successfully using RFE approach. 
+INFO:2021-11-28 10:25:52,045:Exited the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:25:52,047:Important features of the Linear Regression_RFE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:25:52,048:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,049:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,049:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,050:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:52,050:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,050:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,050:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,051:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,051:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,051:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:52,051:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,051:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,054:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:25:52,054:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:25:52,056:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:25:52,123:Linear regression model built successfully using Elastic_Net_CV approach. 
+INFO:2021-11-28 10:25:52,123:Exited the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:25:52,125:Important features of the Linear Regression_ECV updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:25:52,127:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,128:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,128:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,129:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:52,129:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,129:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,129:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,130:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,130:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,130:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:52,131:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,131:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,135:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:25:52,135:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:25:52,137:Entered the lassocv method of the Lasso class.
+INFO:2021-11-28 10:25:52,207:Linear regression model built successfully using LassoCV approach. 
+INFO:2021-11-28 10:25:52,207:Exited the lassocv method of the Lasso class.
+INFO:2021-11-28 10:25:52,209:Important features of the Linear Regression_Lasso updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:25:52,210:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,211:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,211:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,212:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:52,212:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,213:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,213:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,213:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,214:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:52,215:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:52,215:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,217:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:52,220:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:25:52,221:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:25:52,222:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 10:25:52,223:Splitting data into X and y is successful. Shapes of X_train is (936, 8),y_train is (936,), X_test is (402, 8) & the y_test is (402,)
+INFO:2021-11-28 10:25:52,224:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 10:25:52,224:Building a Decision tree regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:25:52,224:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 10:25:56,287:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 10:25:56,287:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:25:56,297:Important features of the Decision tree regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:25:56,303:Building a Decision tree regressor model on the training data with the relevant features only
+INFO:2021-11-28 10:25:56,303:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 10:25:57,127:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 10:25:57,127:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:25:57,138:Using Decision tree regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:25:57,138:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:57,139:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:57,140:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:57,141:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:57,141:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:57,142:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:57,142:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:57,143:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:25:57,143:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:25:57,144:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:25:57,144:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:57,145:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:25:57,154:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:25:57,154:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:25:57,157:Building a Random forest regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:25:57,157:Entered the random_forest_regressor method in class Tree_models_regression
+ERROR:2021-11-28 10:25:58,056:Exception occurred in random_forest_regressor method of the Tree_models_regression class. Exception message:Invalid parameter min_sample_leaf for estimator RandomForestRegressor(min_samples_split=8, n_estimators=200, oob_score=True). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO:2021-11-28 10:25:58,056:random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:25:58,058:Important features of the Random Forest regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:25:58,061:Building a Random forest regressor model on the training data with the relevant features only.
+INFO:2021-11-28 10:25:58,061:Entered the random_forest_regressor method in class Tree_models_regression
+ERROR:2021-11-28 10:26:01,751:Exception occurred in random_forest_regressor method of the Tree_models_regression class. Exception message:Invalid parameter min_sample_leaf for estimator RandomForestRegressor(min_samples_split=8, n_estimators=200, oob_score=True). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO:2021-11-28 10:26:01,751:random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the Tree_models_regression class
+ERROR:2021-11-28 10:26:01,751:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:26:01,751:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+ERROR:2021-11-28 10:26:01,751:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:26:01,751:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+INFO:2021-11-28 10:26:01,751:Using Random Forest Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:26:01,751:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:26:01,752:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:01,752:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:01,752:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:26:01,752:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:01,752:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:01,752:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:26:01,753:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:01,753:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:26:01,753:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:26:01,753:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:01,753:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:01,753:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:26:01,753:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:01,753:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:01,753:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:26:01,754:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:01,754:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:26:01,759:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:26:01,759:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:26:01,760:Building an Adaboost regressor model on the training data and the importance of each feature will be displayed in the console.
+ERROR:2021-11-28 10:26:16,386:Exception occurred in adaboost_regressor method of Ensemble_model class Exception message: 'AdaBoostRegressor' object has no attribute 'estimators_'
+INFO:2021-11-28 10:26:16,386:adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:26:16,389:Important features of the Adaboost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:26:16,392:Building an Adaboost regressor model on the training data with the relevant features only.
+ERROR:2021-11-28 10:26:27,538:Exception occurred in adaboost_regressor method of Ensemble_model class Exception message: 'AdaBoostRegressor' object has no attribute 'estimators_'
+INFO:2021-11-28 10:26:27,538:adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class
+ERROR:2021-11-28 10:26:27,538:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:26:27,538:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+ERROR:2021-11-28 10:26:27,538:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:26:27,538:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+INFO:2021-11-28 10:26:27,538:Using Adaboost Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:26:27,538:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:26:27,538:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:27,539:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:27,539:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:26:27,539:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:27,539:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:27,539:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:26:27,539:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:27,539:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:26:27,539:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:26:27,540:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:27,540:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:27,540:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:26:27,540:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:27,540:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:27,540:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:26:27,540:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:26:27,540:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:26:27,543:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:26:27,543:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:26:27,545:Building a Gradient Boosting regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:26:28,791:Successfully built a model using Gradient Boosting regressor
+INFO:2021-11-28 10:26:28,791:Exited the gradientboosting_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:26:28,793:Important features of the Gradient Boost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:26:28,796:Building a Gradient Boosting regressor model on the training data with the relevant features only
+INFO:2021-11-28 10:26:30,051:Successfully built a model using Gradient Boosting regressor
+INFO:2021-11-28 10:26:30,051:Exited the gradientboosting_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:26:30,056:Using Gradient Boosting Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:26:30,056:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:26:30,056:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:26:30,056:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:26:30,056:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:30,056:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:26:30,057:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:26:30,057:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:26:30,057:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:26:30,057:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:26:30,058:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:30,058:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:26:30,058:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:26:30,060:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:26:30,060:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:26:30,062:Building an XGBoost regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:26:34,889:Successfully built a model using XGBoost regressor 
+INFO:2021-11-28 10:26:34,889:Exited the xgb_regressor method of the TreeModelsReg class
+INFO:2021-11-28 10:26:34,896:Important features of the XGBoost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:26:34,901:Building an XGBoost regressor model on the training data with the relevant features only. 
+INFO:2021-11-28 10:26:39,245:Successfully built a model using XGBoost regressor 
+INFO:2021-11-28 10:26:39,245:Exited the xgb_regressor method of the TreeModelsReg class
+INFO:2021-11-28 10:26:39,270:Using XGBoost regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:26:39,271:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:26:39,272:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:26:39,272:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:26:39,273:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:39,273:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:26:39,275:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:26:39,276:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:26:39,276:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:26:39,276:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:26:39,277:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:26:39,277:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:26:39,278:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:26:39,287:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:26:39,287:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:26:39,291:Best Model: XGBoost regressor 
+INFO:2021-11-28 10:26:39,292:Saving the XGBoost regressor model into the "models" directory
+INFO:2021-11-28 10:26:39,331:Saving the Random Forest regressor model into the "models" directory
+INFO:2021-11-28 10:26:39,332:Solution development part completed successfully. Thank you _/\_ , Stay safe and healthy :-) 
+INFO:2021-11-28 10:52:04,953:The entire development process runs in the main.py 
+INFO:2021-11-28 10:52:04,953:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 10:52:04,959:Data loaded successfully. Shape of the data is (1338, 7)
+INFO:2021-11-28 10:52:04,959:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 10:52:04,959:Entered the feature_engineering method of the DataPreprocessor class
+INFO:2021-11-28 10:52:04,965:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-28 10:52:04,966:Train test split successful. The shape of train data set is (936, 9) and the shape of test data set is (402, 9)
+INFO:2021-11-28 10:52:04,966:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-28 10:52:04,966:Entered the feature_scaling method of the DataPreprocessor class
+INFO:2021-11-28 10:52:04,971:Feature scaling of both train and test datasets successful. Exited the feature_scaling method of the DataPreProcessor class
+INFO:2021-11-28 10:52:04,971:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 10:52:04,972:Splitting data into X and y is successful. Shapes of X_train is (936, 8),y_train is (936,), X_test is (402, 8) & the y_test is (402,)
+INFO:2021-11-28 10:52:04,973:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 10:52:04,973:Entered the Backward Elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:52:05,011:Linear regression model built successfully using Backward Elimination approach.
+INFO:2021-11-28 10:52:05,012:Exited the backward_elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:52:05,012:Defining a function to record the relevant features of each model in the 'relevant_features_by_models.csv' file in the 'results' directory
+INFO:2021-11-28 10:52:05,015:Important features of the Linear_Regression_BE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:05,020:Created a blank data frame "algo_results" to store the results of each and every model
+INFO:2021-11-28 10:52:05,020:Defining a function "evaluate" to evaluate the performance metrics of a model
+INFO:2021-11-28 10:52:05,020:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,021:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,021:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,022:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:05,022:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,022:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,022:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,023:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,023:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,023:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:05,023:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,024:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,028:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:52:05,028:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:52:05,030:Entered the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:52:05,141:Linear regression model built successfully using RFE approach. 
+INFO:2021-11-28 10:52:05,141:Exited the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:52:05,144:Important features of the Linear Regression_RFE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:05,145:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,146:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,146:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,147:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:05,147:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,147:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,147:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,148:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,148:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,148:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:05,148:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,149:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,151:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:52:05,151:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:52:05,153:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:52:05,217:Linear regression model built successfully using Elastic_Net_CV approach. 
+INFO:2021-11-28 10:52:05,217:Exited the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:52:05,219:Important features of the Linear Regression_ECV updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:05,220:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,221:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,221:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,221:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:05,221:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,222:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,223:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,223:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,224:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,224:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:05,224:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,225:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,230:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:52:05,230:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:52:05,232:Entered the lassocv method of the Lasso class.
+INFO:2021-11-28 10:52:05,304:Linear regression model built successfully using LassoCV approach. 
+INFO:2021-11-28 10:52:05,307:Exited the lassocv method of the Lasso class.
+INFO:2021-11-28 10:52:05,332:Important features of the Linear Regression_Lasso updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:05,334:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,336:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,336:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,336:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:05,336:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,336:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,336:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,336:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,336:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:05,337:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:05,337:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,337:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:05,339:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:52:05,340:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:52:05,341:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 10:52:05,343:Splitting data into X and y is successful. Shapes of X_train is (936, 8),y_train is (936,), X_test is (402, 8) & the y_test is (402,)
+INFO:2021-11-28 10:52:05,343:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 10:52:05,343:Building a Decision tree regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:52:05,343:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 10:52:10,094:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 10:52:10,094:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:52:10,097:Important features of the Decision tree regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:10,099:Building a Decision tree regressor model on the training data with the relevant features only
+INFO:2021-11-28 10:52:10,099:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 10:52:11,083:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 10:52:11,083:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:52:11,085:Using Decision tree regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:52:11,086:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:11,087:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:11,087:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:11,087:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:11,088:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:11,088:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:11,088:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:11,089:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:11,089:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:11,090:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:11,090:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:11,090:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:11,094:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:52:11,094:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:52:11,096:Building a Random forest regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:52:11,096:Entered the random_forest_regressor method in class Tree_models_regression
+ERROR:2021-11-28 10:52:11,941:Exception occurred in random_forest_regressor method of the Tree_models_regression class. Exception message:Invalid parameter min_sample_leaf for estimator RandomForestRegressor(min_samples_split=8, n_estimators=200, oob_score=True). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO:2021-11-28 10:52:11,941:random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:52:11,943:Important features of the Random Forest regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:11,947:Building a Random forest regressor model on the training data with the relevant features only.
+INFO:2021-11-28 10:52:11,947:Entered the random_forest_regressor method in class Tree_models_regression
+ERROR:2021-11-28 10:52:16,089:Exception occurred in random_forest_regressor method of the Tree_models_regression class. Exception message:Invalid parameter min_sample_leaf for estimator RandomForestRegressor(min_samples_split=8, n_estimators=200, oob_score=True). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO:2021-11-28 10:52:16,089:random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the Tree_models_regression class
+ERROR:2021-11-28 10:52:16,089:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:52:16,090:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+ERROR:2021-11-28 10:52:16,090:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:52:16,090:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+INFO:2021-11-28 10:52:16,090:Using Random Forest Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:52:16,090:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:52:16,091:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:16,091:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:16,091:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:52:16,091:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:16,092:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:16,092:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:52:16,092:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:16,092:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:52:16,092:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:52:16,093:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:16,093:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:16,093:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:52:16,093:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:16,094:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:16,094:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:52:16,094:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:16,094:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:52:16,099:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:52:16,099:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:52:16,101:Building an Adaboost regressor model on the training data and the importance of each feature will be displayed in the console.
+ERROR:2021-11-28 10:52:33,054:Exception occurred in adaboost_regressor method of Ensemble_model class Exception message: 'AdaBoostRegressor' object has no attribute 'estimators_'
+INFO:2021-11-28 10:52:33,054:adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:52:33,058:Important features of the Adaboost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:33,062:Building an Adaboost regressor model on the training data with the relevant features only.
+ERROR:2021-11-28 10:52:46,384:Exception occurred in adaboost_regressor method of Ensemble_model class Exception message: 'AdaBoostRegressor' object has no attribute 'estimators_'
+INFO:2021-11-28 10:52:46,385:adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class
+ERROR:2021-11-28 10:52:46,385:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:52:46,385:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+ERROR:2021-11-28 10:52:46,386:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:52:46,386:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+INFO:2021-11-28 10:52:46,386:Using Adaboost Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:52:46,386:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:52:46,419:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:46,419:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:46,420:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:52:46,420:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:46,420:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:46,421:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:52:46,421:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:46,421:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:52:46,421:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:52:46,422:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:46,422:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:46,422:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:52:46,423:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:46,423:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:46,423:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:52:46,424:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:52:46,424:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:52:46,429:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:52:46,429:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:52:46,454:Building a Gradient Boosting regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:52:48,184:Successfully built a model using Gradient Boosting regressor
+INFO:2021-11-28 10:52:48,184:Exited the gradientboosting_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:52:48,186:Important features of the Gradient Boost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:48,196:Building a Gradient Boosting regressor model on the training data with the relevant features only
+INFO:2021-11-28 10:52:49,830:Successfully built a model using Gradient Boosting regressor
+INFO:2021-11-28 10:52:49,831:Exited the gradientboosting_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:52:49,839:Using Gradient Boosting Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:52:49,839:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:49,840:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:49,841:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:49,841:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:49,842:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:49,842:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:49,843:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:49,843:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:52:49,844:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:52:49,845:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:52:49,845:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:49,846:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:52:49,851:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:52:49,851:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:52:49,853:Building an XGBoost regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:52:55,764:Successfully built a model using XGBoost regressor 
+INFO:2021-11-28 10:52:55,765:Exited the xgb_regressor method of the TreeModelsReg class
+INFO:2021-11-28 10:52:55,770:Important features of the XGBoost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:52:55,778:Building an XGBoost regressor model on the training data with the relevant features only. 
+INFO:2021-11-28 10:53:00,735:Successfully built a model using XGBoost regressor 
+INFO:2021-11-28 10:53:00,735:Exited the xgb_regressor method of the TreeModelsReg class
+INFO:2021-11-28 10:53:00,758:Using XGBoost regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:53:00,758:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:00,760:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:00,760:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:00,761:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:00,761:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:00,762:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:00,762:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:00,763:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:00,763:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:00,764:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:00,764:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:00,765:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:00,773:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:53:00,773:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:53:00,777:Best Model: XGBoost regressor 
+INFO:2021-11-28 10:53:00,777:Saving the XGBoost regressor model into the "models" directory
+INFO:2021-11-28 10:53:00,840:Saving the Random Forest regressor model into the "models" directory
+INFO:2021-11-28 10:53:00,841:Solution development part completed successfully. Thank you _/\_ , Stay safe and healthy :-) 
+INFO:2021-11-28 10:53:20,413:The entire development process runs in the main.py 
+INFO:2021-11-28 10:53:20,414:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 10:53:20,419:Data loaded successfully. Shape of the data is (1338, 7)
+INFO:2021-11-28 10:53:20,419:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 10:53:20,420:Entered the feature_engineering method of the DataPreprocessor class
+INFO:2021-11-28 10:53:20,429:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-28 10:53:20,431:Train test split successful. The shape of train data set is (936, 9) and the shape of test data set is (402, 9)
+INFO:2021-11-28 10:53:20,431:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-28 10:53:20,431:Entered the feature_scaling method of the DataPreprocessor class
+INFO:2021-11-28 10:53:20,440:Feature scaling of both train and test datasets successful. Exited the feature_scaling method of the DataPreProcessor class
+INFO:2021-11-28 10:53:20,441:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 10:53:20,444:Splitting data into X and y is successful. Shapes of X_train is (936, 8),y_train is (936,), X_test is (402, 8) & the y_test is (402,)
+INFO:2021-11-28 10:53:20,444:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 10:53:20,444:Entered the Backward Elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:53:20,568:Linear regression model built successfully using Backward Elimination approach.
+INFO:2021-11-28 10:53:20,568:Exited the backward_elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:53:20,568:Defining a function to record the relevant features of each model in the 'relevant_features_by_models.csv' file in the 'results' directory
+INFO:2021-11-28 10:53:20,575:Important features of the Linear_Regression_BE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:53:20,580:Created a blank data frame "algo_results" to store the results of each and every model
+INFO:2021-11-28 10:53:20,580:Defining a function "evaluate" to evaluate the performance metrics of a model
+INFO:2021-11-28 10:53:20,580:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,581:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,581:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,581:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:20,582:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,582:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,582:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,583:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,583:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,584:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:20,584:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,584:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,590:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:53:20,590:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:53:20,592:Entered the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:53:20,697:Linear regression model built successfully using RFE approach. 
+INFO:2021-11-28 10:53:20,697:Exited the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 10:53:20,699:Important features of the Linear Regression_RFE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:53:20,701:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,702:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,702:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,703:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:20,703:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,703:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,704:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,707:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,707:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,729:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:20,730:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,759:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,780:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:53:20,781:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:53:20,783:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:53:20,866:Linear regression model built successfully using Elastic_Net_CV approach. 
+INFO:2021-11-28 10:53:20,866:Exited the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:53:20,868:Important features of the Linear Regression_ECV updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:53:20,869:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,872:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,872:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,872:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:20,873:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,873:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,873:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,873:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,873:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:20,874:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:20,874:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,874:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:20,877:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:53:20,877:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:53:20,878:Entered the lassocv method of the Lasso class.
+INFO:2021-11-28 10:53:20,953:Linear regression model built successfully using LassoCV approach. 
+INFO:2021-11-28 10:53:20,953:Exited the lassocv method of the Lasso class.
+INFO:2021-11-28 10:53:20,971:Important features of the Linear Regression_Lasso updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:53:21,003:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:21,009:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:21,010:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:21,011:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:21,011:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:21,011:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:21,011:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:21,012:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:21,012:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:21,012:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:21,012:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:21,013:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:21,016:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:53:21,016:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:53:21,017:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 10:53:21,019:Splitting data into X and y is successful. Shapes of X_train is (936, 8),y_train is (936,), X_test is (402, 8) & the y_test is (402,)
+INFO:2021-11-28 10:53:21,019:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 10:53:21,019:Building a Decision tree regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:53:21,019:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 10:53:28,560:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 10:53:28,560:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:53:28,564:Important features of the Decision tree regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:53:28,570:Building a Decision tree regressor model on the training data with the relevant features only
+INFO:2021-11-28 10:53:28,570:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 10:53:30,372:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 10:53:30,372:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:53:30,381:Using Decision tree regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:53:30,382:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:30,383:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:30,384:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:30,386:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:30,389:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:30,390:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:30,390:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:30,393:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:53:30,393:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:53:30,398:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:30,399:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:30,400:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:53:30,419:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:53:30,420:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:53:30,422:Building a Random forest regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:53:30,422:Entered the random_forest_regressor method in class Tree_models_regression
+ERROR:2021-11-28 10:53:31,345:Exception occurred in random_forest_regressor method of the Tree_models_regression class. Exception message:Invalid parameter min_sample_leaf for estimator RandomForestRegressor(min_samples_split=8, n_estimators=200, oob_score=True). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO:2021-11-28 10:53:31,345:random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the Tree_models_regression class
+INFO:2021-11-28 10:53:31,347:Important features of the Random Forest regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:53:31,350:Building a Random forest regressor model on the training data with the relevant features only.
+INFO:2021-11-28 10:53:31,350:Entered the random_forest_regressor method in class Tree_models_regression
+ERROR:2021-11-28 10:53:36,918:Exception occurred in random_forest_regressor method of the Tree_models_regression class. Exception message:Invalid parameter min_sample_leaf for estimator RandomForestRegressor(min_samples_split=8, n_estimators=200, oob_score=True). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO:2021-11-28 10:53:36,918:random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the Tree_models_regression class
+ERROR:2021-11-28 10:53:36,918:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:53:36,919:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+ERROR:2021-11-28 10:53:36,919:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:53:36,919:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+INFO:2021-11-28 10:53:36,919:Using Random Forest Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:53:36,919:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:53:36,919:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:53:36,919:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:36,919:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:53:36,920:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:53:36,920:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:36,920:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:53:36,920:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:53:36,920:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:53:36,920:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:53:36,920:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:53:36,920:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:36,920:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:53:36,921:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:53:36,921:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:53:36,921:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:53:36,921:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:53:36,921:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:53:36,924:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:53:36,924:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:53:36,926:Building an Adaboost regressor model on the training data and the importance of each feature will be displayed in the console.
+ERROR:2021-11-28 10:54:05,140:Exception occurred in adaboost_regressor method of Ensemble_model class Exception message: 'AdaBoostRegressor' object has no attribute 'estimators_'
+INFO:2021-11-28 10:54:05,140:adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:54:05,152:Important features of the Adaboost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:54:05,158:Building an Adaboost regressor model on the training data with the relevant features only.
+ERROR:2021-11-28 10:54:20,234:Exception occurred in adaboost_regressor method of Ensemble_model class Exception message: 'AdaBoostRegressor' object has no attribute 'estimators_'
+INFO:2021-11-28 10:54:20,234:adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class
+ERROR:2021-11-28 10:54:20,235:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:54:20,235:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+ERROR:2021-11-28 10:54:20,235:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 10:54:20,235:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+INFO:2021-11-28 10:54:20,235:Using Adaboost Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:54:20,235:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:54:20,235:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:54:20,235:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:54:20,236:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:54:20,236:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:54:20,236:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:54:20,236:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:54:20,236:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:54:20,236:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:54:20,237:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 10:54:20,237:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:54:20,237:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 10:54:20,237:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 10:54:20,237:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:54:20,237:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:54:20,237:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 10:54:20,238:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 10:54:20,238:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 10:54:20,241:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:54:20,242:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:54:20,243:Building a Gradient Boosting regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:54:21,532:Successfully built a model using Gradient Boosting regressor
+INFO:2021-11-28 10:54:21,532:Exited the gradientboosting_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:54:21,534:Important features of the Gradient Boost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:54:21,537:Building a Gradient Boosting regressor model on the training data with the relevant features only
+INFO:2021-11-28 10:54:22,993:Successfully built a model using Gradient Boosting regressor
+INFO:2021-11-28 10:54:22,993:Exited the gradientboosting_regressor method of the Ensemble_models class
+INFO:2021-11-28 10:54:22,999:Using Gradient Boosting Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:54:22,999:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:54:23,000:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:54:23,001:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:54:23,001:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:54:23,001:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:54:23,002:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:54:23,002:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:54:23,002:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:54:23,002:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:54:23,003:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:54:23,003:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:54:23,003:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:54:23,008:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:54:23,009:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:54:23,011:Building an XGBoost regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 10:54:28,032:Successfully built a model using XGBoost regressor 
+INFO:2021-11-28 10:54:28,033:Exited the xgb_regressor method of the TreeModelsReg class
+INFO:2021-11-28 10:54:28,040:Important features of the XGBoost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 10:54:28,046:Building an XGBoost regressor model on the training data with the relevant features only. 
+INFO:2021-11-28 10:54:32,474:Successfully built a model using XGBoost regressor 
+INFO:2021-11-28 10:54:32,474:Exited the xgb_regressor method of the TreeModelsReg class
+INFO:2021-11-28 10:54:32,492:Using XGBoost regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 10:54:32,492:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:54:32,494:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:54:32,494:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:54:32,496:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:54:32,496:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:54:32,497:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:54:32,498:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 10:54:32,498:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 10:54:32,499:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 10:54:32,500:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 10:54:32,500:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 10:54:32,501:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 10:54:32,508:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 10:54:32,508:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 10:54:32,511:Best Model: XGBoost regressor 
+INFO:2021-11-28 10:54:32,511:Saving the XGBoost regressor model into the "models" directory
+INFO:2021-11-28 10:54:32,551:Saving the Random Forest regressor model into the "models" directory
+INFO:2021-11-28 10:54:32,553:Solution development part completed successfully. Thank you _/\_ , Stay safe and healthy :-) 
+INFO:2021-11-28 11:11:35,756:The entire development process runs in the main.py 
+INFO:2021-11-28 11:11:35,757:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 11:11:35,762:Data loaded successfully. Shape of the data is (1338, 7)
+INFO:2021-11-28 11:11:35,762:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-28 11:11:35,762:Entered the feature_engineering method of the DataPreprocessor class
+INFO:2021-11-28 11:11:35,767:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-28 11:11:35,769:Train test split successful. The shape of train data set is (936, 9) and the shape of test data set is (402, 9)
+INFO:2021-11-28 11:11:35,769:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-28 11:11:35,769:Entered the feature_scaling method of the DataPreprocessor class
+INFO:2021-11-28 11:11:35,773:Feature scaling of both train and test datasets successful. Exited the feature_scaling method of the DataPreProcessor class
+INFO:2021-11-28 11:11:35,774:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 11:11:35,775:Splitting data into X and y is successful. Shapes of X_train is (936, 8),y_train is (936,), X_test is (402, 8) & the y_test is (402,)
+INFO:2021-11-28 11:11:35,775:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 11:11:35,775:Entered the Backward Elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 11:11:35,824:Linear regression model built successfully using Backward Elimination approach.
+INFO:2021-11-28 11:11:35,824:Exited the backward_elimination method of the LR_With_FeatureSelection class
+INFO:2021-11-28 11:11:35,824:Defining a function to record the relevant features of each model in the 'relevant_features_by_models.csv' file in the 'results' directory
+INFO:2021-11-28 11:11:35,830:Important features of the Linear_Regression_BE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:11:35,834:Created a blank data frame "algo_results" to store the results of each and every model
+INFO:2021-11-28 11:11:35,834:Defining a function "evaluate" to evaluate the performance metrics of a model
+INFO:2021-11-28 11:11:35,835:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,835:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,836:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,836:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:35,836:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:35,836:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:35,836:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,837:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,837:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,838:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:35,838:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:35,839:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:35,842:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:11:35,842:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:11:35,844:Entered the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 11:11:35,912:Linear regression model built successfully using RFE approach. 
+INFO:2021-11-28 11:11:35,912:Exited the rfe_approach method of the LR_With_FeatureSelection class
+INFO:2021-11-28 11:11:35,914:Important features of the Linear Regression_RFE updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:11:35,916:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,916:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,917:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,917:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:35,917:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:35,918:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:35,918:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,918:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,918:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:35,919:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:35,919:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:35,919:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:35,923:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:11:35,923:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:11:35,924:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 11:11:35,997:Linear regression model built successfully using Elastic_Net_CV approach. 
+INFO:2021-11-28 11:11:35,997:Exited the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 11:11:36,000:Important features of the Linear Regression_ECV updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:11:36,002:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,003:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,003:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,004:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:36,004:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:36,004:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:36,005:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,005:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,005:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,006:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:36,006:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:36,006:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:36,010:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:11:36,010:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:11:36,012:Entered the lassocv method of the Lasso class.
+INFO:2021-11-28 11:11:36,105:Linear regression model built successfully using LassoCV approach. 
+INFO:2021-11-28 11:11:36,106:Exited the lassocv method of the Lasso class.
+INFO:2021-11-28 11:11:36,108:Important features of the Linear Regression_Lasso updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:11:36,110:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,111:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,111:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,112:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:36,112:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:36,112:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:36,112:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,112:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,112:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:36,113:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:36,113:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:36,113:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:36,116:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:11:36,116:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:11:36,117:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-28 11:11:36,122:Splitting data into X and y is successful. Shapes of X_train is (936, 8),y_train is (936,), X_test is (402, 8) & the y_test is (402,)
+INFO:2021-11-28 11:11:36,122:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-28 11:11:36,122:Building a Decision tree regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 11:11:36,122:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 11:11:41,987:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 11:11:41,987:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 11:11:41,991:Important features of the Decision tree regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:11:41,998:Building a Decision tree regressor model on the training data with the relevant features only
+INFO:2021-11-28 11:11:41,999:Entered the Decision Tree Regressor method in class Tree_models_regression
+INFO:2021-11-28 11:11:42,962:Successfully built a model using Decision tree regressor with the best hyper parameters
+INFO:2021-11-28 11:11:42,963:Exited decision_tree_regressor method of the Tree_models_regression class
+INFO:2021-11-28 11:11:42,973:Using Decision tree regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 11:11:42,973:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:42,974:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:42,974:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:42,975:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:42,975:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:42,976:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:42,976:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:42,978:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:11:42,978:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:11:42,981:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:42,981:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:42,982:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:11:43,003:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:11:43,003:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:11:43,006:Building a Random forest regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 11:11:43,006:Entered the random_forest_regressor method in class Tree_models_regression
+ERROR:2021-11-28 11:11:44,063:Exception occurred in random_forest_regressor method of the Tree_models_regression class. Exception message:Invalid parameter min_sample_leaf for estimator RandomForestRegressor(min_samples_split=8, n_estimators=200, oob_score=True). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO:2021-11-28 11:11:44,063:random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the Tree_models_regression class
+INFO:2021-11-28 11:11:44,065:Important features of the Random Forest regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:11:44,068:Building a Random forest regressor model on the training data with the relevant features only.
+INFO:2021-11-28 11:11:44,068:Entered the random_forest_regressor method in class Tree_models_regression
+ERROR:2021-11-28 11:11:48,998:Exception occurred in random_forest_regressor method of the Tree_models_regression class. Exception message:Invalid parameter min_sample_leaf for estimator RandomForestRegressor(min_samples_split=8, n_estimators=200, oob_score=True). Check the list of available parameters with `estimator.get_params().keys()`.
+INFO:2021-11-28 11:11:48,998:random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the Tree_models_regression class
+ERROR:2021-11-28 11:11:48,998:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 11:11:48,998:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+ERROR:2021-11-28 11:11:48,998:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 11:11:48,998:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+INFO:2021-11-28 11:11:48,998:Using Random Forest Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 11:11:48,998:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 11:11:48,998:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:11:48,998:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:48,998:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 11:11:48,998:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:11:48,998:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:48,998:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 11:11:48,999:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:11:48,999:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 11:11:48,999:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 11:11:48,999:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:11:48,999:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:48,999:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 11:11:48,999:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:11:49,000:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:11:49,000:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 11:11:49,000:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:11:49,000:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 11:11:49,002:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:11:49,003:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:11:49,004:Building an Adaboost regressor model on the training data and the importance of each feature will be displayed in the console.
+ERROR:2021-11-28 11:12:04,805:Exception occurred in adaboost_regressor method of Ensemble_model class Exception message: 'AdaBoostRegressor' object has no attribute 'estimators_'
+INFO:2021-11-28 11:12:04,805:adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class
+INFO:2021-11-28 11:12:04,807:Important features of the Adaboost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:12:04,810:Building an Adaboost regressor model on the training data with the relevant features only.
+ERROR:2021-11-28 11:12:15,615:Exception occurred in adaboost_regressor method of Ensemble_model class Exception message: 'AdaBoostRegressor' object has no attribute 'estimators_'
+INFO:2021-11-28 11:12:15,615:adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class
+ERROR:2021-11-28 11:12:15,615:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 11:12:15,615:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+ERROR:2021-11-28 11:12:15,615:Exception occurred in "model_predict" method of the Model_Prediction class. Exception message:'NoneType' object has no attribute 'predict'
+INFO:2021-11-28 11:12:15,615:"model_predict" method unsuccessful. Exited the "model_predict" method of the Model_Prediction class 
+INFO:2021-11-28 11:12:15,615:Using Adaboost Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 11:12:15,615:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 11:12:15,616:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:12:15,616:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 11:12:15,616:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 11:12:15,617:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:12:15,617:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:12:15,617:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 11:12:15,617:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:12:15,617:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 11:12:15,617:Entered the r2_score method of the Metrics class
+ERROR:2021-11-28 11:12:15,618:Exception occurred in r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:12:15,618:r2_score method unsuccessful. Exited the r2_score method of the Metrics class 
+INFO:2021-11-28 11:12:15,618:Entered the adj_r2_score method of the Metrics class
+ERROR:2021-11-28 11:12:15,618:Exception occurred in adj_r2_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:12:15,618:adj_r2_score method unsuccessful. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:12:15,618:Entered the rmse_score method of the Metrics class
+ERROR:2021-11-28 11:12:15,619:Exception occurred in rmse_score method of the Metrics class. Exception message:Input contains NaN, infinity or a value too large for dtype('float64').
+INFO:2021-11-28 11:12:15,619:rmse_score method unsuccessful. Exited the rmse_score method of the Metrics class 
+INFO:2021-11-28 11:12:15,622:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:12:15,622:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:12:15,624:Building a Gradient Boosting regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 11:12:17,177:Successfully built a model using Gradient Boosting regressor
+INFO:2021-11-28 11:12:17,177:Exited the gradientboosting_regressor method of the Ensemble_models class
+INFO:2021-11-28 11:12:17,179:Important features of the Gradient Boost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:12:17,182:Building a Gradient Boosting regressor model on the training data with the relevant features only
+INFO:2021-11-28 11:12:18,403:Successfully built a model using Gradient Boosting regressor
+INFO:2021-11-28 11:12:18,404:Exited the gradientboosting_regressor method of the Ensemble_models class
+INFO:2021-11-28 11:12:18,410:Using Gradient Boosting Regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 11:12:18,410:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:12:18,411:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:12:18,411:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:12:18,412:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:12:18,412:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:12:18,412:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:12:18,412:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:12:18,413:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:12:18,413:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:12:18,413:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:12:18,413:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:12:18,414:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:12:18,416:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:12:18,417:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:12:18,419:Building an XGBoost regressor model on the training data and the importance of each feature will be displayed in the console.
+INFO:2021-11-28 11:12:23,211:Successfully built a model using XGBoost regressor 
+INFO:2021-11-28 11:12:23,211:Exited the xgb_regressor method of the TreeModelsReg class
+INFO:2021-11-28 11:12:23,215:Important features of the XGBoost regressor updated in the 'relevant_features_by_models.csv' 
+INFO:2021-11-28 11:12:23,220:Building an XGBoost regressor model on the training data with the relevant features only. 
+INFO:2021-11-28 11:12:27,722:Successfully built a model using XGBoost regressor 
+INFO:2021-11-28 11:12:27,722:Exited the xgb_regressor method of the TreeModelsReg class
+INFO:2021-11-28 11:12:27,739:Using XGBoost regressor model, successfully made predictions on both the training and testing data respectively
+INFO:2021-11-28 11:12:27,739:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:12:27,740:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:12:27,741:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:12:27,742:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:12:27,742:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:12:27,743:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:12:27,743:Entered the r2_score method of the Metrics class
+INFO:2021-11-28 11:12:27,744:Calculated r2_score. Exited the r2_score method of the Metrics class
+INFO:2021-11-28 11:12:27,744:Entered the adj_r2_score method of the Metrics class
+INFO:2021-11-28 11:12:27,745:Calculated adj_r2_score. Exited the adj_r2_score method of the Metrics class 
+INFO:2021-11-28 11:12:27,746:Entered the rmse_score method of the Metrics class
+INFO:2021-11-28 11:12:27,746:Calculated rmse_score. Exited the rmse_score method of the Metrics class
+INFO:2021-11-28 11:12:27,753:Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. 
+INFO:2021-11-28 11:12:27,754:Updated the results in 'Performance of algorithms.csv'
+INFO:2021-11-28 11:12:27,757:Best Model: XGBoost regressor 
+INFO:2021-11-28 11:12:27,757:Saving the XGBoost regressor model into the "models" directory
+INFO:2021-11-28 11:12:27,796:Saving the Random Forest regressor model into the "models" directory
+INFO:2021-11-28 11:12:27,798:Solution development part completed successfully. Thank you _/\_ , Stay safe and healthy :-) 

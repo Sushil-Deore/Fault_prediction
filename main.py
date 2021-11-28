@@ -121,8 +121,7 @@ def evaluate(dataframe, algorithm_name, X_train, y_train, y_pred_train, X_test, 
                                          metrics.r2_score(y_test, y_pred_test),
                                          metrics.adj_r2_score(X_test, y_test, y_pred_test),
                                          metrics.rmse_score(y_test, y_pred_test)]
-        logging.info(
-            f'Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. ')
+        logging.info(f'Results Dataframe saved to disk as "Performance of algorithms.csv" file in the "results" directory. ')
         logging.info("Updated the results in 'Performance of algorithms.csv'")
 
         return dataframe.to_csv('results/Performance of algorithms.csv', index=False)
@@ -154,13 +153,13 @@ lr_ECV, X_train_ECV, y_pred_train_ECV, X_test_ECV, y_pred_test_ECV = ECV.Elastic
 
 # relevant features
 relevant_features_by_ECV = ['age',
-                            'Smoker__yes',
+                            'yes',
                             'children',
                             'bmi',
-                            'region__northwest',
+                            'region_northwest',
                             'male',
-                            'region__southwest',
-                            'region__southeast']
+                            'region_southwest',
+                            'region_southeast']
 
 # storing the info of the relevant features
 rec_imp_features(imp_f, "Linear Regression_ECV", relevant_features_by_ECV)
@@ -177,7 +176,7 @@ lr_lasso, X_train_lasso, y_pred_train_lasso, X_test_lasso, y_pred_test_lasso = l
 
 # relevant features
 relevant_features_by_Lasso = ['age',
-                              'Smoker_yes',
+                              'yes',
                               'children',
                               'bmi',
                               'region_northwest',
@@ -202,14 +201,13 @@ decision_tree = Tree_models_regression(X_train, y_train, X_test, y_test)
 """ 1) Decision Tree Regressor """
 
 # logging operation
-logging.info(
-    "Building a Decision tree regressor model on the training data and the importance of each feature will be displayed in the console.")
+logging.info("Building a Decision tree regressor model on the training data and the importance of each feature will be displayed in the console.")
 
 # Decision tree regressor model
 dt_model = decision_tree.decision_tree_regressor()
 
 # top features as per the feature importance
-top_features_dt = ['age', 'Smoker_yes', 'bmi', 'Children_2', 'Children_3', 'Children_4', 'Children_1']
+top_features_dt = ['age', 'yes', 'bmi', 'children']
 
 # storing the top features data in a file
 rec_imp_features(imp_f, "Decision tree regressor", top_features_dt)
@@ -249,7 +247,7 @@ logging.info("Building a Random forest regressor model on the training data and 
 rf_model = RF.random_forest_regressor()
 
 # top 5 features as per the feature importance
-top_features_rf = ['age', 'Smoker_yes', 'bmi', 'Children_3', 'Children_2', 'male']
+top_features_rf = ['age', 'yes', 'bmi', 'children', 'male']
 
 # storing the relevant features in a file.
 rec_imp_features(imp_f, "Random Forest regressor", top_features_rf)
@@ -289,7 +287,7 @@ logging.info("Building an Adaboost regressor model on the training data and the 
 adb_model = ADB.adaboost_regressor()
 
 # Top features by the Adaboost regressor
-top_features_adb = ['age', 'Smoker_yes', 'bmi', 'Children_3', 'Children_3', 'male']
+top_features_adb = ['age', 'yes', 'bmi', 'children']
 
 # storing the relevant features in the file.
 rec_imp_features(imp_f, "Adaboost regressor", top_features_adb)
@@ -314,12 +312,10 @@ y_pred_train_adb = ADB.model_prediction(adb_model_2, X_train_adb)
 y_pred_test_adb = ADB.model_prediction(adb_model_2, X_test_adb)
 
 # logging operation
-logging.info(
-    'Using Adaboost Regressor model, successfully made predictions on both the training and testing data respectively')
+logging.info('Using Adaboost Regressor model, successfully made predictions on both the training and testing data respectively')
 
 # calling the function "evaluate" to store the results into local disk.
-evaluate(algo_results, 'Adaboost regressor', X_train_adb, y_train, y_pred_train_adb, X_test_adb, y_test,
-         y_pred_test_adb)
+evaluate(algo_results, 'Adaboost regressor', X_train_adb, y_train, y_pred_train_adb, X_test_adb, y_test, y_pred_test_adb)
 
 """ Result:- Model accuracy is less that the random forest regressor. Let's experiment with Gradient boosting regressor."""
 
@@ -328,21 +324,17 @@ evaluate(algo_results, 'Adaboost regressor', X_train_adb, y_train, y_pred_train_
 GBR = Ensemble_models(X_train, y_train, X_test, y_test)
 
 # logging operation
-logging.info(
-    "Building a Gradient Boosting regressor model on the training data and the importance of each feature will be displayed in the console.")
+logging.info("Building a Gradient Boosting regressor model on the training data and the importance of each feature will be displayed in the console.")
 
 # building a gradient boosting regressor
 gbr_model = GBR.gradientboosting_regressor()
 
-# top 4 features by the Gradient boosting regressor
-top_features_gbr = ['Smoker_yes',
+# top 6 features by the Gradient boosting regressor
+top_features_gbr = ['yes',
                     'age',
                     'bmi',
-                    'Children_3',
-                    'Children_5',
-                    'Children_2',
+                    'children',
                     'male',
-                    'Children_4',
                     'region_southwest']
 
 # storing the relevant features in the file.
@@ -367,12 +359,10 @@ y_pred_train_gbr = GBR.model_prediction(gbr_model_2, X_train_gbr)
 # predictions on the testing data
 y_pred_test_gbr = GBR.model_prediction(gbr_model_2, X_test_gbr)
 
-logging.info(
-    'Using Gradient Boosting Regressor model, successfully made predictions on both the training and testing data respectively')
+logging.info('Using Gradient Boosting Regressor model, successfully made predictions on both the training and testing data respectively')
 
 # calling the function "evaluate" to store the results into local disk
-evaluate(algo_results, 'Gradient Boost regressor', X_train_gbr, y_train, y_pred_train_gbr, X_test_gbr, y_test,
-         y_pred_test_gbr)
+evaluate(algo_results, 'Gradient Boost regressor', X_train_gbr, y_train, y_pred_train_gbr, X_test_gbr, y_test, y_pred_test_gbr)
 
 """ Result:- Compared to Adaboost regressor, Gradient Boost Regressor has performed well. Let's check with XGBoost regressor as well."""
 
@@ -381,21 +371,17 @@ evaluate(algo_results, 'Gradient Boost regressor', X_train_gbr, y_train, y_pred_
 XGB = Ensemble_models(X_train, y_train, X_test, y_test)
 
 # logging operation
-logging.info(
-    "Building an XGBoost regressor model on the training data and the importance of each feature will be displayed in the console.")
+logging.info("Building an XGBoost regressor model on the training data and the importance of each feature will be displayed in the console.")
 
 # building an XGBoost regressor model
 xgbr_model = XGB.xgb_regressor()
 
 # top features by the XGBoost regressor
 top_features_xgbr = ['age',
-                     'Smoker_yes',
+                     'yes',
                      'bmi',
-                     'Children_3',
-                     'Children_2',
+                     'children',
                      'male',
-                     'Children_1',
-                     'region_southeast',
                      'region_southwest']
 
 # storing the relevant features into file.
@@ -420,12 +406,10 @@ y_pred_train_xgbr = XGB.model_prediction(xgbr_model_2, X_train_xgbr)
 # predictions on the testing data
 y_pred_test_xgbr = XGB.model_prediction(xgbr_model_2, X_test_xgbr)
 
-logging.info(
-    'Using XGBoost regressor model, successfully made predictions on both the training and testing data respectively')
+logging.info('Using XGBoost regressor model, successfully made predictions on both the training and testing data respectively')
 
 # calling the function "evaluate" to store the results into local disk.
-evaluate(algo_results, 'XGBoost regressor', X_train_xgbr, y_train, y_pred_train_xgbr, X_test_xgbr, y_test,
-         y_pred_test_xgbr)
+evaluate(algo_results, 'XGBoost regressor', X_train_xgbr, y_train, y_pred_train_xgbr, X_test_xgbr, y_test, y_pred_test_xgbr)
 
 """ Result:- As per the results recorded in the "Experiments with algorithms.csv" , 
 XGBoost Regressor is the best one in terms of adjusted R2 score on testing data, followed by Random Forest regressor """

@@ -31,9 +31,6 @@ def predict():
     if request.method == 'POST':
         age = request.form['age']
         bmi = request.form['bmi']
-        #region_northwest = request.form['region_northwest']
-        #region_southeast = request.form['region_southeast']
-        #region_southwest = request.form['region_southwest']
         sex = request.form['sex']
         smoker = request.form['smoker']
         children = request.form['children']
@@ -65,17 +62,11 @@ def predict_api():
     if request.method == 'POST':
         age = request.json['age']
         bmi = request.json['bmi']
-        region_northwest = request.json['region_northwest']
-        region_southeast = request.json['region_southeast']
-        region_southwest = request.json['region_southwest']
         sex = request.json['sex']
         smoker = request.json['smoker']
         children = request.json['children']
         input_val = [age,
                      bmi,
-                     region_northwest,
-                     region_southeast,
-                     region_southwest,
                      sex,
                      smoker,
                      children]

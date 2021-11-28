@@ -66,19 +66,15 @@ class DataPreProcessor:
             sex_dummies = pd.get_dummies(self.dataframe.sex, drop_first=True)
             self.dataframe = pd.concat([self.dataframe, sex_dummies], axis=1)
 
-            # Column children
-            children_dummies = pd.get_dummies(self.dataframe.children, prefix='Children', drop_first=True)
-            self.dataframe = pd.concat([self.dataframe, children_dummies], axis=1)
-
             # Column smoker
-            smoker_dummies = pd.get_dummies(self.dataframe.smoker, prefix='Smoker', drop_first=True)
+            smoker_dummies = pd.get_dummies(self.dataframe.smoker, drop_first=True)
             self.dataframe = pd.concat([self.dataframe, smoker_dummies], axis=1)
 
             # Column region
             region_dummies = pd.get_dummies(self.dataframe.region, prefix='region', drop_first=True)
             self.dataframe = pd.concat([self.dataframe, region_dummies], axis=1)
 
-            self.dataframe = self.dataframe.drop(['sex','children','smoker','region'], axis=1)
+            self.dataframe = self.dataframe.drop(['sex', 'smoker', 'region'], axis=1)
 
             return self.dataframe
 
@@ -88,7 +84,6 @@ class DataPreProcessor:
                           'Exception message:' + str(e))
             logging.info('feature_engineering unsuccessful. Exited the feature_engineering method of the '
                          'DataPreProcessor class ')
-
 
     def feature_scaling(self, df_train, df_test):
         """Description: This method scales the features of both the train and test datasets

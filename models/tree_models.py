@@ -43,7 +43,6 @@ class Tree_models_regression:
     a class from the stated getter, setter and deleter as parameters
     """
 
-    @property
     def decision_tree_regressor(self):
         """Description: This method builds a model using DecisionTreeRegressor algorithm imported from the sci-kit learn,
         by implementing cross validation technique to choose the best estimator with the best hyper parameters.
@@ -115,7 +114,6 @@ class Tree_models_regression:
             logging.info(
                 'decision_tree_regressor method unsuccessful. Exited the decision_tree_regressor method of the Tree_models_regression class ')
 
-    @property
     def random_forest_regressor(self):
         """Description: This method builds a model using RandomForestRegressor algorithm, a type of ensemble technique
         imported from sci-kit learn library. It uses cross validation technique and chooses the best estimator with the
@@ -192,3 +190,17 @@ class Tree_models_regression:
             logging.info(
                 'random_forest_regressor method unsuccessful. Exited the random_forest_regressor method of the '
                 'Tree_models_regression class')
+
+    def model_prediction(cls, model, X):
+        try:
+            prediction = model.predict(X)
+
+            return prediction
+
+        except Exception as e:
+            # logging operation
+            logging.error('Exception occurred in "model_predict" method of the Model_Prediction class. Exception '
+                          'message:' + str(e))
+
+            logging.info('"model_predict" method unsuccessful. Exited the "model_predict" method of the '
+                         'Model_Prediction class ')

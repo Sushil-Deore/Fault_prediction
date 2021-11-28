@@ -1,0 +1,13 @@
+Algorithm,Imp_Features
+Linear_Regression_BE,"['age', 'bmi', 'Children_2', 'Children_4', 'Smoker_yes']"
+Linear Regression_RFE,"Index(['age', 'bmi', 'Children_1', 'Children_2', 'Children_3', 'Children_4',
+       'Children_5', 'Smoker_yes', 'region_northwest', 'region_southeast',
+       'region_southwest'],
+      dtype='object')"
+Linear Regression_ECV,"['age', 'Smoker__yes', 'children', 'bmi', 'region__northwest', 'male', 'region__southwest', 'region__southeast']"
+Linear Regression_Lasso,"['age', 'Smoker_yes', 'children', 'bmi', 'region_northwest', 'region_southwest', 'male', 'region_southeast']"
+Decision tree regressor,"['age', 'Smoker_yes', 'bmi', 'Children_2', 'Children_3', 'Children_4', 'Children_1']"
+Random Forest regressor,"['age', 'Smoker_yes', 'bmi', 'Children_3', 'Children_2', 'male']"
+Adaboost regressor,"['age', 'Smoker_yes', 'bmi', 'Children_3', 'Children_3', 'male']"
+Gradient Boost regressor,"['Smoker_yes', 'age', 'bmi', 'Children_3', 'Children_5', 'Children_2', 'male', 'Children_4', 'region_southwest']"
+XGBoost regressor,"['age', 'Smoker_yes', 'bmi', 'Children_3', 'Children_2', 'male', 'Children_1', 'region_southeast', 'region_southwest']"

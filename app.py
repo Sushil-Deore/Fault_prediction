@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # Load the model from the File
 
-model_load = joblib.load('./pickle_files/premium_prediction_model.pkl')
+model_load = joblib.load('./pickle_files/RandomForest_Regressor_model.pkl')
 
 logging.info('Pickle file loading completed.')
 
@@ -31,17 +31,14 @@ def predict():
     if request.method == 'POST':
         age = request.form['age']
         bmi = request.form['bmi']
-        region_northwest = request.form['region_northwest']
-        region_southeast = request.form['region_southeast']
-        region_southwest = request.form['region_southwest']
+        #region_northwest = request.form['region_northwest']
+        #region_southeast = request.form['region_southeast']
+        #region_southwest = request.form['region_southwest']
         sex = request.form['sex']
         smoker = request.form['smoker']
         children = request.form['children']
         input_val = [age,
                      bmi,
-                     region_northwest,
-                     region_southeast,
-                     region_southwest,
                      sex,
                      smoker,
                      children]

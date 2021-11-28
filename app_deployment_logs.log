@@ -1,0 +1,56 @@
+INFO:2021-11-27 21:29:32,002:Pickle file loading completed.
+INFO:2021-11-27 21:29:32,024: * Restarting with stat
+INFO:2021-11-27 21:29:33,415:Pickle file loading completed.
+WARNING:2021-11-27 21:29:33,426: * Debugger is active!
+INFO:2021-11-27 21:29:33,437: * Debugger PIN: 114-835-370
+INFO:2021-11-27 21:29:33,625: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:2021-11-27 21:30:21,779:127.0.0.1 - - [27/Nov/2021 21:30:21] "GET / HTTP/1.1" 200 -
+INFO:2021-11-27 21:30:21,859:127.0.0.1 - - [27/Nov/2021 21:30:21] "GET /static/background.jpg HTTP/1.1" 200 -
+INFO:2021-11-27 21:30:22,066:127.0.0.1 - - [27/Nov/2021 21:30:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:2021-11-27 21:30:33,508:127.0.0.1 - - [27/Nov/2021 21:30:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:2021-11-27 21:30:33,542:127.0.0.1 - - [27/Nov/2021 21:30:33] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:2021-11-27 21:30:33,544:127.0.0.1 - - [27/Nov/2021 21:30:33] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:2021-11-27 21:30:33,563:127.0.0.1 - - [27/Nov/2021 21:30:33] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:2021-11-27 21:30:33,604:127.0.0.1 - - [27/Nov/2021 21:30:33] "GET /predict?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:2021-11-27 21:30:33,640:127.0.0.1 - - [27/Nov/2021 21:30:33] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:2021-11-27 21:45:16,421:Pickle file loading completed.
+INFO:2021-11-27 21:45:16,437: * Restarting with stat
+INFO:2021-11-27 21:45:18,853:Pickle file loading completed.
+WARNING:2021-11-27 21:45:18,863: * Debugger is active!
+INFO:2021-11-27 21:45:18,868: * Debugger PIN: 114-835-370
+INFO:2021-11-27 21:45:18,977: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:2021-11-27 21:48:09,177:127.0.0.1 - - [27/Nov/2021 21:48:09] "GET / HTTP/1.1" 200 -
+INFO:2021-11-27 21:48:09,255:127.0.0.1 - - [27/Nov/2021 21:48:09] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+INFO:2021-11-27 21:48:25,473:127.0.0.1 - - [27/Nov/2021 21:48:25] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:2021-11-27 21:48:25,506:127.0.0.1 - - [27/Nov/2021 21:48:25] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:2021-11-27 21:48:25,507:127.0.0.1 - - [27/Nov/2021 21:48:25] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:2021-11-27 21:48:25,521:127.0.0.1 - - [27/Nov/2021 21:48:25] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:2021-11-27 21:48:25,574:127.0.0.1 - - [27/Nov/2021 21:48:25] "GET /predict?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:2021-11-27 21:49:57,655:Pickle file loading completed.
+INFO:2021-11-27 21:49:57,674: * Restarting with stat
+INFO:2021-11-27 21:50:00,076:Pickle file loading completed.
+WARNING:2021-11-27 21:50:00,086: * Debugger is active!
+INFO:2021-11-27 21:50:00,091: * Debugger PIN: 114-835-370
+INFO:2021-11-27 21:50:00,189: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:2021-11-27 21:50:11,839:127.0.0.1 - - [27/Nov/2021 21:50:11] "GET / HTTP/1.1" 200 -
+INFO:2021-11-27 21:50:11,914:127.0.0.1 - - [27/Nov/2021 21:50:11] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+INFO:2021-11-27 21:50:20,082:Insurance Premium is 9.81
+INFO:2021-11-27 21:50:20,082:Prediction getting posted to the web page.
+INFO:2021-11-27 21:50:20,083:127.0.0.1 - - [27/Nov/2021 21:50:20] "POST /predict HTTP/1.1" 200 -
+INFO:2021-11-27 21:50:20,113:127.0.0.1 - - [27/Nov/2021 21:50:20] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+INFO:2021-11-27 21:50:33,884:Insurance Premium is 10.11
+INFO:2021-11-27 21:50:33,885:Prediction getting posted to the web page.
+INFO:2021-11-27 21:50:33,887:127.0.0.1 - - [27/Nov/2021 21:50:33] "POST /predict HTTP/1.1" 200 -
+INFO:2021-11-27 21:50:33,915:127.0.0.1 - - [27/Nov/2021 21:50:33] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+INFO:2021-11-27 21:51:23,931:Insurance Premium is 10.11
+INFO:2021-11-27 21:51:23,931:Prediction getting posted to the web page.
+INFO:2021-11-27 21:51:23,935:127.0.0.1 - - [27/Nov/2021 21:51:23] "POST /predict HTTP/1.1" 200 -
+INFO:2021-11-27 21:51:23,989:127.0.0.1 - - [27/Nov/2021 21:51:23] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+INFO:2021-11-27 21:51:34,678:Insurance Premium is 10.11
+INFO:2021-11-27 21:51:34,679:Prediction getting posted to the web page.
+INFO:2021-11-27 21:51:34,680:127.0.0.1 - - [27/Nov/2021 21:51:34] "POST /predict HTTP/1.1" 200 -
+INFO:2021-11-27 21:51:34,706:127.0.0.1 - - [27/Nov/2021 21:51:34] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -
+INFO:2021-11-27 21:51:44,280:Insurance Premium is 10.15
+INFO:2021-11-27 21:51:44,280:Prediction getting posted to the web page.
+INFO:2021-11-27 21:51:44,281:127.0.0.1 - - [27/Nov/2021 21:51:44] "POST /predict HTTP/1.1" 200 -
+INFO:2021-11-27 21:51:44,313:127.0.0.1 - - [27/Nov/2021 21:51:44] "[36mGET /static/background.jpg HTTP/1.1[0m" 304 -

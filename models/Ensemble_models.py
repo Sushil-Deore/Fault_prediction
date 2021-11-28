@@ -38,7 +38,6 @@ class Ensemble_models:
         self.X_test = X_test
         self.y_test = y_test
 
-    @property
     def adaboost_regressor(self):
         """Description: This method builds a model using AdaBoostRegressor algorithm, a type of ensemble technique imported from the sklearn library. It uses cross validation technique and chooses the best estimator with the best hyper parameters.
         Raises an exception if it fails
@@ -104,7 +103,7 @@ class Ensemble_models:
             logging.info(
                 'adaboost_regressor method unsuccessful. Exited the adaboost_regressor method of the Ensemble_models class')
 
-    @property
+
     def gradientboosting_regressor(self):
         """Description: This method builds a model using GradientBoostingRegressor algorithm, a type of ensemble technique imported
            from the sklearn library. It uses cross validation technique and chooses the best estimator with the best hyper parameters.
@@ -249,3 +248,23 @@ class Ensemble_models:
             logging.error('Exception occurred in xgb_regressor method of the TreeModelsReg class. Exception '
                           'message:' + str(e))
             logging.info('xgb_regressor method unsuccessful. Exited the xgb_regressor method of the Ensemble_models class')
+            
+    def model_prediction(cls, model, X):
+        """
+
+        Returns
+        -------
+        object
+        """
+        try:
+            prediction = model.predict(X)
+
+            return prediction
+
+        except Exception as e:
+            # logging operation
+            logging.error('Exception occurred in "model_predict" method of the Model_Prediction class. Exception '
+                          'message:' + str(e))
+
+            logging.info('"model_predict" method unsuccessful. Exited the "model_predict" method of the '
+                         'Model_Prediction class ')

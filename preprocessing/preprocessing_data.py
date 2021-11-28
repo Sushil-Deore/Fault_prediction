@@ -1,4 +1,3 @@
-
 # Importing libraries
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -19,6 +18,57 @@ class DataPreProcessor:
     def __init__(self, dataframe):
         self.dataframe = dataframe
 
+
+    def removing_outliers(self, column_name):
+
+        """ Description: This method removes outliers from the specified column using Inter quartile range method.
+            Here, first we consider the values which are at the upper and lower limits and store it in one dataframe say data_included.
+            Then, we exclude the values which are at the upper and lower limits and store it in one dataframe say data_excluded.
+            Then, we concatenate both the data frames into a single dataframe.
+            Raises an exception if it fails.
+
+            parameters
+            column_name: Column for which the outliers has to be removed.
+
+            returns
+            returns a dataframe having outliers removed in the given column.
+        """
+
+        # logging operation
+
+        logging.info("Entered removing_outliers method of the DataPreProcessor class.")
+
+        try:
+            q1 = self.dataframe[column_name].quantile(0.25)
+            q3 = self.dataframe[column_name].quantile(0.75)
+
+            iqr = q3 - q1
+
+            lower_limit = q1 - 1.5 * iqr
+            upper_limit = q1 + 1.5 * iqr
+
+            data_included = self.dataframe.loc[(self.dataframe[column_name] >= lower_limit) & (self.dataframe[column_name] <= upper_limit)]
+
+            data_excluded = self.dataframe.loc[(self.dataframe[column_name] > lower_limit) & (self.dataframe[column_name] < upper_limit)]
+
+            self.dataframe = pd.concat([data_included, data_excluded])
+
+            # logging operation
+
+            logging.info(f'Outlier treatment using IQR method: Successfully removed outliers in the {column_name} column.')
+
+            logging.info('Exited the rem_outliers method of the DataPreprocessor class ')
+
+            return self.dataframe
+
+        except Exception as e:
+            # logging operation
+            logging.error('Exception occurred in rem_outliers method of the DataPreProcessor class. Exception '
+                          'message:' + str(e))
+            logging.info('Removing outliers unsuccessful. Exited the rem_outliers method of the '
+                         'DataPreprocessor class ')
+
+
     def data_split(self, test_size):
         """ Description: This method splits the dataframe into train and test data respectively
             using the sklearn's "train_test_split" method.
@@ -28,10 +78,8 @@ class DataPreProcessor:
 
             returns: training and testing dataframes respectively.
         """
-
         # logging operation
         logging.info('Entered the data_split method of the DataPreProcessor class')
-
         try:
             df_train, df_test = train_test_split(self.dataframe, test_size=test_size, shuffle=True, random_state=42)
 
@@ -50,40 +98,6 @@ class DataPreProcessor:
             logging.info('Train test split unsuccessful. Exited the data_split method of the '
                          'DataPreProcessor class ')
 
-    def feature_engineering(self):
-        """Description: This method does the feature engineering of the features of both the train and test datasets
-        respectively, using the dummy variables method.
-        Raises an exception if it fails.
-
-        parameters: columns with datatype as object
-
-        returns: dummy variable
-        """
-        logging.info('Entered the feature_engineering method of the DataPreprocessor class')
-
-        try:
-            # Column sex
-            sex_dummies = pd.get_dummies(self.dataframe.sex, drop_first=True)
-            self.dataframe = pd.concat([self.dataframe, sex_dummies], axis=1)
-
-            # Column smoker
-            smoker_dummies = pd.get_dummies(self.dataframe.smoker, drop_first=True)
-            self.dataframe = pd.concat([self.dataframe, smoker_dummies], axis=1)
-
-            # Column region
-            region_dummies = pd.get_dummies(self.dataframe.region, prefix='region', drop_first=True)
-            self.dataframe = pd.concat([self.dataframe, region_dummies], axis=1)
-
-            self.dataframe = self.dataframe.drop(['sex', 'smoker', 'region'], axis=1)
-
-            return self.dataframe
-
-        except Exception as e:
-            # logging operation
-            logging.error('Exception occurred in feature_engineering method of the DataPreProcessor class. '
-                          'Exception message:' + str(e))
-            logging.info('feature_engineering unsuccessful. Exited the feature_engineering method of the '
-                         'DataPreProcessor class ')
 
     def feature_scaling(self, df_train, df_test):
         """Description: This method scales the features of both the train and test datasets
@@ -121,7 +135,8 @@ class DataPreProcessor:
             logging.info('Feature scaling unsuccessful. Exited the feature_scaling method of the '
                          'DataPreProcessor class ')
 
-    def train_test_splitting(self, df_train, df_test, column_name):
+
+    def train_test_splitting(df_train, df_test, column_name):
         """Description: This method splits the data into dependent and independent variables respectively
         i.e., X and y.
         Raises an exception if it fails

@@ -1,0 +1,131 @@
+INFO:2021-11-26 12:02:48,834:model checks are done
+INFO:2021-11-26 12:02:53,011:model checks are done
+INFO:2021-11-26 12:02:55,709:NumExpr defaulting to 4 threads.
+INFO:2021-11-26 12:03:32,365:Outlier treatment done
+INFO:2021-11-26 12:03:55,929:Data Visualization done
+INFO:2021-11-26 12:04:12,972:Feature engineering done
+INFO:2021-11-26 12:13:04,180:model checks are done
+INFO:2021-11-26 12:13:08,535:Outlier treatment done
+INFO:2021-11-26 12:13:20,324:Feature engineering done
+INFO:2021-11-26 12:14:25,365:Data Visualization done
+INFO:2021-11-26 12:14:32,098:Train Test Split done
+INFO:2021-11-26 12:15:57,211:Data Visualization done
+INFO:2021-11-26 12:18:14,420:Data Visualization done
+INFO:2021-11-26 12:27:22,173:model checks are done
+INFO:2021-11-26 12:27:25,055:Outlier treatment done
+INFO:2021-11-26 12:27:36,319:Feature engineering done
+INFO:2021-11-26 12:27:50,429:Data Visualization done
+INFO:2021-11-26 12:27:50,557:Train Test Split done
+INFO:2021-11-26 12:28:00,698:Train Test Split done
+INFO:2021-11-26 12:29:14,445:model checks are done
+INFO:2021-11-26 12:29:17,099:Outlier treatment done
+INFO:2021-11-26 12:29:27,805:Feature engineering done
+INFO:2021-11-26 12:29:41,770:Data Visualization done
+INFO:2021-11-26 12:30:00,802:Train Test Split done
+INFO:2021-11-26 12:36:16,691:model checks are done
+INFO:2021-11-26 12:36:19,543:Outlier treatment done
+INFO:2021-11-26 12:36:30,340:Feature engineering done
+INFO:2021-11-26 12:36:44,099:Data Visualization done
+INFO:2021-11-26 12:36:44,248:Train Test Split done
+INFO:2021-11-26 16:37:45,762:model checks are done
+INFO:2021-11-26 16:37:49,526:Outlier treatment done
+INFO:2021-11-26 16:38:01,988:Feature engineering done
+INFO:2021-11-26 16:38:21,935:Data Visualization done
+INFO:2021-11-26 16:39:12,519:Train Test Split for linear regression done
+INFO:2021-11-26 16:47:24,360:model checks are done
+INFO:2021-11-26 16:47:27,777:Outlier treatment done
+INFO:2021-11-26 16:47:39,466:Feature engineering done
+INFO:2021-11-26 16:47:56,173:Data Visualization done
+INFO:2021-11-26 16:47:56,376:Train Test Split for linear regression done
+INFO:2021-11-26 17:04:43,898:model checks are done
+INFO:2021-11-26 17:04:46,941:Outlier treatment done
+INFO:2021-11-26 17:04:58,717:Feature engineering done
+INFO:2021-11-26 17:05:14,355:Data Visualization done
+INFO:2021-11-26 17:05:14,526:Train Test Split for linear regression done
+INFO:2021-11-26 17:37:56,772:model checks are done
+INFO:2021-11-26 17:38:00,319:Outlier treatment done
+INFO:2021-11-26 17:38:15,018:Feature engineering done
+INFO:2021-11-26 17:38:30,708:Data Visualization done
+INFO:2021-11-26 17:38:30,898:Train Test Split for linear regression done
+INFO:2021-11-26 17:38:32,234:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-27 09:03:59,252:model checks are done
+INFO:2021-11-27 09:04:02,915:Outlier treatment done
+INFO:2021-11-27 09:04:15,618:Feature engineering done
+INFO:2021-11-27 09:04:31,824:Data Visualization done
+INFO:2021-11-27 09:04:32,079:Train Test Split for linear regression done
+INFO:2021-11-27 09:06:27,329:model checks are done
+INFO:2021-11-27 09:06:30,313:Outlier treatment done
+INFO:2021-11-27 09:06:42,793:Feature engineering done
+INFO:2021-11-27 09:06:57,838:Data Visualization done
+INFO:2021-11-27 09:06:58,026:Train Test Split for linear regression done
+INFO:2021-11-27 09:06:59,408:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-27 09:40:41,920:model checks are done
+INFO:2021-11-27 09:40:42,133:NumExpr defaulting to 4 threads.
+INFO:2021-11-27 09:40:45,142:Outlier treatment done
+INFO:2021-11-27 09:40:57,457:Feature engineering done
+INFO:2021-11-27 09:41:13,922:Data Visualization done
+INFO:2021-11-27 09:41:14,955:Train Test Split for linear regression done
+INFO:2021-11-27 09:41:17,703:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-27 09:47:14,047:model checks are done
+INFO:2021-11-27 09:47:14,209:NumExpr defaulting to 4 threads.
+INFO:2021-11-27 09:47:16,836:Outlier treatment done
+INFO:2021-11-27 09:47:28,872:Feature engineering done
+INFO:2021-11-27 09:47:43,331:Data Visualization done
+INFO:2021-11-27 09:47:44,175:Train Test Split for linear regression done
+INFO:2021-11-27 09:47:46,364:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-27 09:57:33,228:model checks are done
+INFO:2021-11-27 09:57:33,407:NumExpr defaulting to 4 threads.
+INFO:2021-11-27 09:57:37,465:Outlier treatment done
+INFO:2021-11-27 09:58:40,564:model checks are done
+INFO:2021-11-27 09:58:40,757:NumExpr defaulting to 4 threads.
+INFO:2021-11-27 09:58:43,757:Outlier treatment done
+INFO:2021-11-27 09:59:25,977:Feature engineering done
+INFO:2021-11-27 10:01:44,181:Data Visualization done
+INFO:2021-11-27 10:01:53,374:Train Test Split for linear regression done
+INFO:2021-11-27 10:03:34,345:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 09:25:50,719:model checks are done
+INFO:2021-11-28 09:25:50,927:NumExpr defaulting to 4 threads.
+INFO:2021-11-28 09:25:54,741:Outlier treatment done
+INFO:2021-11-28 10:02:11,181:model checks are done
+INFO:2021-11-28 10:02:11,332:NumExpr defaulting to 4 threads.
+INFO:2021-11-28 10:02:14,635:Outlier treatment done
+INFO:2021-11-28 10:02:29,164:Feature engineering done
+INFO:2021-11-28 10:03:09,016:Data Visualization done
+INFO:2021-11-28 10:03:10,303:Train Test Split for linear regression done
+INFO:2021-11-28 10:03:13,128:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:03:56,236:model checks are done
+INFO:2021-11-28 10:03:59,579:Outlier treatment done
+INFO:2021-11-28 10:04:12,913:Feature engineering done
+INFO:2021-11-28 10:04:30,879:Data Visualization done
+INFO:2021-11-28 10:04:31,084:Train Test Split for linear regression done
+INFO:2021-11-28 10:04:32,464:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:09:36,252:model checks are done
+INFO:2021-11-28 10:09:44,541:Outlier treatment done
+INFO:2021-11-28 10:10:09,099:Feature engineering done
+INFO:2021-11-28 10:10:40,833:Data Visualization done
+INFO:2021-11-28 10:10:41,219:Train Test Split for linear regression done
+INFO:2021-11-28 10:10:43,865:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:44:41,212:model checks are done
+INFO:2021-11-28 10:44:44,508:Outlier treatment done
+INFO:2021-11-28 10:44:55,581:Feature engineering done
+INFO:2021-11-28 10:45:17,053:Data Visualization done
+INFO:2021-11-28 10:45:17,242:Train Test Split for linear regression done
+INFO:2021-11-28 10:45:18,631:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:45:32,457:model checks are done
+INFO:2021-11-28 10:45:37,268:Outlier treatment done
+INFO:2021-11-28 10:45:49,478:Feature engineering done
+INFO:2021-11-28 10:46:06,183:Data Visualization done
+INFO:2021-11-28 10:46:06,354:Train Test Split for linear regression done
+INFO:2021-11-28 10:46:07,754:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 10:59:55,870:model checks are done
+INFO:2021-11-28 11:00:00,121:Outlier treatment done
+INFO:2021-11-28 11:00:12,939:Feature engineering done
+INFO:2021-11-28 11:00:37,379:Data Visualization done
+INFO:2021-11-28 11:00:37,604:Train Test Split for linear regression done
+INFO:2021-11-28 11:00:39,171:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.
+INFO:2021-11-28 11:02:35,429:model checks are done
+INFO:2021-11-28 11:02:38,793:Outlier treatment done
+INFO:2021-11-28 11:02:49,988:Feature engineering done
+INFO:2021-11-28 11:03:05,948:Data Visualization done
+INFO:2021-11-28 11:03:06,136:Train Test Split for linear regression done
+INFO:2021-11-28 11:03:07,504:Entered the Elastic_Net_CV method of the Embedded_method_for_feature_selection class.

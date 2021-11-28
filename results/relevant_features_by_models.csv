@@ -1,0 +1,12 @@
+Algorithm,Imp_Features
+Linear_Regression_BE,"['age', 'bmi', 'children', 'yes']"
+Linear Regression_RFE,"Index(['age', 'bmi', 'children', 'yes', 'region_southeast',
+       'region_southwest'],
+      dtype='object')"
+Linear Regression_ECV,"['age', 'yes', 'children', 'bmi', 'region_northwest', 'male', 'region_southwest', 'region_southeast']"
+Linear Regression_Lasso,"['age', 'yes', 'children', 'bmi', 'region_northwest', 'region_southwest', 'male', 'region_southeast']"
+Decision tree regressor,"['age', 'yes', 'bmi', 'children']"
+Random Forest regressor,"['age', 'yes', 'bmi', 'children', 'male']"
+Adaboost regressor,"['age', 'yes', 'bmi', 'children']"
+Gradient Boost regressor,"['yes', 'age', 'bmi', 'children', 'male', 'region_southwest']"
+XGBoost regressor,"['age', 'yes', 'bmi', 'children', 'male', 'region_southwest']"
